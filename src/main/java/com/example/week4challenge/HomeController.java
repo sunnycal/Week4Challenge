@@ -15,7 +15,6 @@ public class HomeController {
     public String profilePage() {
         return "profile";
     }
-
     @RequestMapping("/about")
     public String aboutPage(){
         return "about";
