@@ -21,11 +21,11 @@ public class HomeController {
     }
     @RequestMapping("/git_One")
     public String aboutGitOne() {
-        return "gitOne";
+        return "git1";
     }
     @RequestMapping("/git_Two")
     public String aboutGitTwo() {
-        return "gitTwo";
+        return "git2";
     }
     @RequestMapping("/core_One")
     public String coreJavaOne() {
