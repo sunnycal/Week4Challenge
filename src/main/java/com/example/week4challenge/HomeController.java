@@ -17,16 +17,27 @@ public class HomeController {
     }
 
     @RequestMapping("/about")
-    public String aboutPage() {
+    public String aboutPage(){
         return "about";
-
     }
-
     @RequestMapping("/git_One")
     public String aboutGitOne() {
         return "gitOne";
-
     }
+    @RequestMapping("/git_Two")
+    public String aboutGitTwo() {
+        return "gitTwo";
+    }
+    @RequestMapping("/core_One")
+    public String coreJavaOne() {
+        return "coreJavaConcept1";
+    }
+    @RequestMapping("/core_Two")
+    public String coreJavaTwo() {
+        return "coreJavaConcept2";
+    }
+
+
 
 
 }
