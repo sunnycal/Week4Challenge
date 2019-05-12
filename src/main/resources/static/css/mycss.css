@@ -1,8 +1,19 @@
-body, html {
-    height: 100%;
-    background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full%20page/img(20).jpg");
+/*body, html {*/
+/*    height: 100%;*/
+/*    background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full%20page/img(20).jpg");*/
 
-}
+/*}*/
+/*.jumbotron text-left{*/
+/*    background-image: url("");*/
+/*    width: 10px;*/
+/*    height: 10px*/
+/*}*/
+/*#jar {*/
+/*    padding: 0em 0em 0.5em 0em;*/
+/*    position: sticky;*/
+/*    top: 0px;*/
+
+/*}*/
 .bg {
     /* The image used */
     background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full%20page/img(20).jpg");

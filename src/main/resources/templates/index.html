@@ -1,51 +1,165 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
+    <title>Bootstrap 4 Website Example</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!--    <link rel="stylesheet" href="/css/mycss.css">-->
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!--my css-->
-    <link rel="stylesheet" type="text/css" href="css/mycss.css">
-
-    <title>Hello, world!</title>
+    <style>
+        .fakeimg {
+            height: 200px;
+            background: #aaa;
+        }
+    </style>
 </head>
-<body><p><a href="/" class="text-red">Home</a>
-    <a href="/" class="text-red">Link</a>
-<a href="/" class="text-red">Link</a></p>
+<body>
 
-<div class="bg">
-
-<h1>Hello, world!</h1>
-
-
-<ul>
-    <li><a href ="/git_One">GitHub Concept: One</a></li>
-    <li><a href ="/git_Two">GitHub Concept: Two</a></li>
-    <li><a href ="/core_One">Core Java Concept: One</a></li>
-    <li><a href ="/core_Two">Core Java Concept: Two</a></li>
-    <li><a href ="/Prog&Alg_One">Programming and Algorithm Concept: One</a></li>
-    <li><a href ="/Prog&Alg_Two">Programming and Algorithm Concept: Two</a></li>
-    <li><a href ="/OOP_One">Object-Oriented Concept: One</a></li>
-    <li><a href ="/OOP_Two">Object-Oriented Concept: Two</a></li>
-    <li><a href ="/HTML_One">HTML Concept: One</a></li>
-    <li><a href ="/CSS_One">CSS Concept: One</a></li>
-
-</ul>
-
+<div class="jumbotron text-left" style="margin-bottom:0">
+    <h1>JavaTopia</h1>
+    <p>Educational Blog</p>
 </div>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container" style="margin-top:20px">
+    <div class="row">
+
+        <div class="col-sm-8">
+            <h2 id="git">GitHub1</h2>
+            <h5>GitHub Concept1, May, 11, 2019</h5>
+            <div class="one">Fake Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <p class="text-right"><a href ="/git_One">View Details</a></p>
+            <br>
+            <h2>GitHub2</h2>
+            <h5>GitHub Concept2, May, 11, 2019</h5>
+            <div class="fakeimg">Fake Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <p class="text-right"><a href ="/git_Two">View Details</a></p>
+            <h2 id="core">The Java Virtual Machine</h2>
+            <h5>Java Core Concept, May, 11, 2019</h5>
+            <div class="three"><img src="/image/javaPic.jpg" alt="Random Java Pic" style="width:700px;height:300px";> </div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <p class="text-right"><a href ="/core_One">View Details</a></p>
+            <br>
+            <h2>Tokenization</h2>
+            <h5>Java Core Concept, May, 11, 2019</h5>
+            <div class="fakeimg">Fake Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <p class="text-right"><a href ="/core_Two">View Details</a></p>
+            <br>
+            <h2 id="oop">Interfaces</h2>
+            <h5>Object-Oriented Concept, May, 11, 2019</h5>
+            <div class="fakeimg">Fake Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <p class="text-right"><a href ="/OOP_One">View Details</a></p>
+            <br>
+            <h2>Abstract Classes</h2>
+            <h5>Object-Oriented Concept, May, 11, 2019</h5>
+            <div class="fakeimg">Fake Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <p class="text-right"><a href ="/OOP_Two">View Details</a></p>
+            <br>
+            <h2 id="prog">Program Design</h2>
+            <h5>Program and Design Algorithm, May, 11, 2019</h5>
+            <div class="fakeimg">Fake Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <br>
+            <p class="text-right"><a href ="/Prog&Alg_One">View Details</a></p>
+            <h2>Program Algorith</h2>
+            <h5>Program and Design Algorithm, May, 11, 2019</h5>
+            <div class="fakeimg">Fake Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <p class="text-right"><a href ="/Prog&Alg_Two">View Details</a></p>
+            <br>
+            <h2 id="html">Colors</h2>
+            <h5>CSS topics, May 11, 2019</h5>
+            <div class="fakeimg">Fake Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <p class="text-right"><a href ="/CSS_One">View Details</a></p>
+            <br>
+            <h2>Images</h2>
+            <h5>HTML topics, May 11, 2019</h5>
+            <div class="fakeimg">Fake Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <p class="text-right"><a href ="HTML_One">View Details</a></p>
+            <br>
+        </div>
+        <div class="col-sm-4">
+            <h2>Meet The Authors</h2>
+            <h5>Photo of me:</h5>
+            <div class="fakeimg">Fake Image</div>
+            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+            <div id="jar">
+            <h3>Concepts and Topics</h3>
+            <p>Lorem ipsum dolor sit ame.</p>
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active"  href="#git">GitHub</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active"  href="#core">Core Java</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active"  href="#oop">Object-Oriented Programming</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active"  href="#prog">Program Design and Algorithm</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active"  href="#html">HTML and CSS</a>
+                </li>
+            </ul>
+            <hr class="d-sm-none">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+    <p>Footer</p>
+</div>
 
 </body>
 </html>
