@@ -32,9 +32,98 @@
             <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
         </div>
         <div class="col-sm-6">
-            <h1>Abstract Classes</h1>
+            <h1>Primitive Types vs Reference Types</h1>
             <h5>May 11, 2019</h5>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <p>When passing primitive data types as arguments, whatever is being done to it within the method
+                will not affect it outside the method. The value of the variable is not affected outside the method.</p>
+
+<!--             <p>   Ex(Liang, p214):-->
+
+<!--                public class Increment {-->
+
+<!--                public static void main(String[] args) {-->
+
+<!--                int x = 1;-->
+
+<!--                System.out.println("Before the call, x is " + x);-->
+
+<!--                increment(x);-->
+
+<!--                System.out.println("After the call, x is " + x);-->
+
+<!--                }-->
+
+
+
+<!--                public static void increment(int n) {-->
+
+<!--                n++;-->
+
+<!--                System.out.println("n inside the method is " + n);-->
+
+<!--                }-->
+
+<!--                }-->
+
+<!--                Ouput:-->
+
+<!--                Before the call, x is1-->
+
+<!--                n inside the method is 2-->
+
+<!--                After the call, x is 1-->
+
+
+
+
+
+<!--                When passing reference types as arguments, whatever is being done to it within the method WILL affect it outside that method. So if you pass an object to a method, it will be affected outside that method.-->
+
+<!--                Ex:-->
+
+<!--                public class Tester {-->
+
+<!--                public static void main(String[] args) {-->
+
+<!--                Point point = new Point();-->
+
+<!--                System.out.println("X: " +point.x + ", Y: " + point.y);-->
+
+<!--                updatePoint(point);-->
+
+<!--                System.out.println("X: " +point.x + ", Y: " + point.y);-->
+
+<!--                }-->
+
+<!--                public static void updatePoint(Point point) {-->
+
+<!--                point.x = 100;-->
+
+<!--                point.y = 100;-->
+
+<!--                }-->
+
+<!--                }-->
+
+<!--                class Point {-->
+
+<!--                public int x, y;-->
+
+<!--                }-->
+
+<!--                }-->
+
+
+
+<!--                Output:-->
+
+<!--                X: 0, Y: 0-->
+
+<!--                X: 100, Y: 100-->
+
+<!--                Link: https://www.tutorialspoint.com/Pass-by-reference-vs-Pass-by-Value-in-java-->
+
+            </p>
             <br>
         </div>
     </div>
