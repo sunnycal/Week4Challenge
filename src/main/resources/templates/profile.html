@@ -7,24 +7,55 @@
     <link rel="stylesheet" type="text/css" href="css/blogCss.css">
 </head>
 <body>
-<div class="card-columns">
-<div class="card" style="width:400px">
-    <img class="card-img-top" src="image/ProfOona2.jpg" alt="Card image"style="width:300px;height:300px">
-    <div class="card-body">
-        <h4 class="card-title">Oona Carbonie</h4>
-        <p class="card-text">Some example text.</p>
-        <a href="#" class="btn btn-primary">See Profile</a>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/about">BootCamp</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <div class="row justify-content-around">
+        <div class="col-4">
+            <div class="float-center">
+            <img src="/image/ProfOona2.jpg" class="img-fluid" style="width:250px;height:250px" alt="Oona's alter ego">
+            <h4><b>Oona Carbonie</b></h4>
+            </div>
+            <b>Bio:</b><br>
+            <p class ="text-center">Oona started coding in January 2019 and has finally found her passion. Her hobbies
+                are usually centered around fixing things and getting things to work better.<br>
+                <i>If things aren't broken...break them, for research purposes!</i></p>
+        </div>
+        <div class="col-4">
+            <div class="float-center">
+            <img src="/image/ProfOona.jpg"class="img-fluid" style="width:250px;height:250px" alt="Milana's alter ego">
+            <h4><b>Milana Campbell</b></h4>
+            </div>
+            <b>Bio:</b><br>
+            <p  class ="text-center">When she isn't out there saving the world, Milana spends time with her daughter.
+            She started coding with the Java Web Development bootcamp and has her heart set on yet another superhero's
+            career of becoming a lawyer.<br><i>Can you handle the truth?</i></p>
+        </div>
     </div>
 </div>
-<div class="card" style="width:400px">
-    <img class="card-img-top"  src="image/ProfOona.jpg" alt="Card image"style="width:300px;height:300px">
-    <div class="card-body">
-        <h4 class="card-title">Milana Campbell</h4>
-        <p class="card-text">Some example text.</p>
-        <a href="#" class="btn btn-primary">See Profile</a>
+<footer>
+    <div class="text-center">
+    <nav class="bottomnav">
+        <a href="/">Home</a>
+        <a href="/about">BootCamp</a>
+    </nav>
     </div>
-</div>
-</div>
+</footer>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
