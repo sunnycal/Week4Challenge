@@ -33,94 +33,30 @@
         <div class="col-sm-6">
             <h1>Primitive Types vs Reference Types</h1>
             <h5>May 11, 2019</h5>
-            <p>When passing primitive data types as arguments, whatever is being done to it within the method
+            <p>When passing <i>primitive data types</i> as arguments, whatever is being done to it within the method
                 will not affect it outside the method. The value of the variable is not affected outside the method.</p>
 
-<!--             <p>   Ex(Liang, p214):-->
-
-<!--                public class Increment {-->
-
-<!--                public static void main(String[] args) {-->
-
-<!--                int x = 1;-->
-
-<!--                System.out.println("Before the call, x is " + x);-->
-
-<!--                increment(x);-->
-
-<!--                System.out.println("After the call, x is " + x);-->
-
-<!--                }-->
+             <p>   Ex(Liang, p214):</p>
+            <div class="text-center">
+                <img src="/image/passValue .png"  class="img-fluid" alt="pass by value example">
+            </div>
 
 
 
-<!--                public static void increment(int n) {-->
+            <p>Ouput:<br>
 
-<!--                n++;-->
+                Before the call, x is 1<br>
 
-<!--                System.out.println("n inside the method is " + n);-->
+                n inside the method is 2<br>
 
-<!--                }-->
+                After the call, x is 1</p>
 
-<!--                }-->
+            <p> When passing <i>reference types</i>as arguments, whatever is being done to it within the method WILL
+                   affect it outside that method. So if you pass an object to a method, it will be affected outside
+                   that method.</p>
+            <a href="https://www.tutorialspoint.com/Pass-by-reference-vs-Pass-by-Value-in-java">
+                   https://www.tutorialspoint.com/Pass-by-reference-vs-Pass-by-Value-in-java</a>
 
-<!--                Ouput:-->
-
-<!--                Before the call, x is1-->
-
-<!--                n inside the method is 2-->
-
-<!--                After the call, x is 1-->
-
-
-
-
-
-<!--                When passing reference types as arguments, whatever is being done to it within the method WILL affect it outside that method. So if you pass an object to a method, it will be affected outside that method.-->
-
-<!--                Ex:-->
-
-<!--                public class Tester {-->
-
-<!--                public static void main(String[] args) {-->
-
-<!--                Point point = new Point();-->
-
-<!--                System.out.println("X: " +point.x + ", Y: " + point.y);-->
-
-<!--                updatePoint(point);-->
-
-<!--                System.out.println("X: " +point.x + ", Y: " + point.y);-->
-
-<!--                }-->
-
-<!--                public static void updatePoint(Point point) {-->
-
-<!--                point.x = 100;-->
-
-<!--                point.y = 100;-->
-
-<!--                }-->
-
-<!--                }-->
-
-<!--                class Point {-->
-
-<!--                public int x, y;-->
-
-<!--                }-->
-
-<!--                }-->
-
-
-
-<!--                Output:-->
-
-<!--                X: 0, Y: 0-->
-
-<!--                X: 100, Y: 100-->
-
-<!--                Link: https://www.tutorialspoint.com/Pass-by-reference-vs-Pass-by-Value-in-java-->
 
             </p>
             <br>
