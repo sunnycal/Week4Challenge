@@ -27,14 +27,56 @@
 <div class="container" style="margin-top:30px">
     <div class="row">
         <div class="col-sm-4">
-            <div class="fakeimg">Fake Image</div>
-            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+            <div></div>
+            <img src ="image/tokens.png" class="img-fluid" style="width:700px;height:250px" alt="cutting tokens">
+            <p>Cutting it into tokens</p>
         </div>
         <div class="col-sm-6">
-            <h1>The SDK</h1>
+            <h1>Tokenization</h1>
             <h5>May 11, 2019</h5>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-            <br>
+            <p>Tokenizing is the process of taking a large amount of data and breaking it into small elements to be
+                stored in variables. This data has tokens and delimiters. The delimiters separate the tokens.</p>
+                Ex:  Jack loves his 3 dogs<br>
+            If the delimiters are whitespace then the previous example has 5 tokens:
+            <ul>
+                <li>Jack</li>
+                <li>loves</li>
+                <li>his</li>
+                <li>3</li>
+                <li>dogs</li>
+
+            </ul>
+            <p>Tokenization is done in two classes:<i>String</i> and <i>Scanner</i><br>
+                <br>
+                Scanner Class<br>
+                   <p><b>Delimiter:</b> In the scanner class, the delimiters are whitespace by default. To change the
+                   delimiters to something other than whitespace you can use the useDelimiters(String regex) method
+            of Scanner class.</p>
+                  <p> <b>Tokens:</b> The tokens are stored into variables and converted into their respective primitive
+                   data types automatically (byte, short, int, long, float, double). There are no method to convert
+                   to Char automatically.</p>
+                   <p>Two types of methods to look at are the Token-based input methods and the Line-based input method</p>
+
+            <b>Token-based input methods:</b><br>
+            <ul>
+                <li>The methods are: nextByte(), nextInt(), nextShort(), nextLong(), nextFloat() and nextDouble()</li>
+                <li>Skips any delimiters,</li>
+                <li>Reads token ending at delimiter,</li>
+                <li>Does not read delimiter after Token,</li>
+                <li>Value converted into byte, short, int, long, float or double for respective methods</li>
+                <li>Next() doesn’t convert anything but returns a String.</li>
+            </ul>
+
+            <b>Line based input method:</b><br>
+            <ul>
+                <li>Method: nextLine()</li>
+                <li>Reads characters that start with delimiter</li>
+                <li>New Line character is read (not part of string returned)</li>
+            </ul>
+            <p><b>Common Programming Error:</b> Putting the line-based method after a token-based input method. Since
+                    the token-based input method does not read delimiters, it leaves the delimiter for the line-based
+                    method. Since in this case the delimiter is a whitespace, you are left with an empty string.<p>
+            <p>To fix this, put input.nextLine() prior to using the next line-based method to clear the buffer.</p>
         </div>
     </div>
 </div>
