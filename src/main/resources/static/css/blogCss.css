@@ -2,7 +2,10 @@ header{
     background-color: #F1F1F1;
     text-align: center;
     padding: 20px;
+    background-image: url("/image/laptop_man.jpg");
+
 }
+
 h2{
     text-decoration-color: white;
     text-align: left;
